@@ -42,6 +42,7 @@ export default function Home() {
 
         </div>
       <Image
+      priority
       src="https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
       alt="Profile Picture"
       width={500}
