@@ -25,7 +25,7 @@ const Todo = () => {
   const [todos,setTodos] = useState([]);
   useEffect(() => {
     let parsed = JSON.parse(localStorage.getItem("todos"));
-    console.log(parsed)
+    
  
     if (parsed !== null) {
       setTodos(parsed)
@@ -36,7 +36,7 @@ const Todo = () => {
   useEffect(
     () => {
         setTimeout(() => {
-          console.log("ok")
+         
               localStorage.setItem("todos",JSON.stringify(todos))
             
             
