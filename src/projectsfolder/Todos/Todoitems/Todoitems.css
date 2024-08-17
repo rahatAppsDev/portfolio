@@ -1,0 +1,87 @@
+.todoitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 15px;
+}
+.todoitem:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+.item-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.item-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    width: 60px;
+    min-width: 60px;
+    cursor: pointer;
+}
+.check-btn {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(16, 132, 190);
+   
+    width: 60px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-btn:hover {
+    
+    background-color: rgb(74, 166, 212);
+}
+.item-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    height: auto;
+}
+.item-edit{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(190, 117, 16);
+   
+    width: 60px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-edit:hover {
+    background-color: rgb(150, 90, 5);
+}
+.item-delete{
+    cursor: pointer;
+    color: red;
+    background-color: inherit;
+    border: 1px solid red;
+    width: 60px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-delete:hover {
+    background-color: red;
+    color: white;
+}
+.item-task{
+    padding-left: 10px;
+}
