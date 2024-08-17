@@ -24,15 +24,23 @@ const Todo = () => {
 
   const [todos,setTodos] = useState([]);
   useEffect(() => {
-    setTodos(JSON.parse(localStorage.getItem("todos")))
+    let parsed = JSON.parse(localStorage.getItem("todos"));
+    console.log(parsed)
+ 
+    if (parsed !== null) {
+      setTodos(parsed)
+    }
   },[]);
 
   
   useEffect(
     () => {
         setTimeout(() => {
-            localStorage.setItem("todos",JSON.stringify(todos))
+          console.log("ok")
+            if (todos.length !== 0) {
+              localStorage.setItem("todos",JSON.stringify(todos))
             
+            }
         }, 100);
     },[todos]
   );
@@ -69,11 +77,11 @@ const Todo = () => {
             </div>
             <button className='todo-add-btn' onClick={() => {add()}}>Add</button>
         </div>
-        <div className="todolist">
-        { todos.map((item,index) => {
+        {todos.length !== 0 &&<div className="todolist">
+         {todos.map((item,index) => {
            return <Todoitems key={index} no={index} task={item.task} display={item.display} setTodos={setTodos} />
         })}
-        </div>
+        </div>}
 
 
     </div>
