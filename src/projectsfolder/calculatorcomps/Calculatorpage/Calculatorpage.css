@@ -1,0 +1,79 @@
+
+  
+  .calculatorpage {
+    height: calc(100vh - var(--NAVBARHEIGHT));
+    min-height: 500px;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,red,rgb(200, 130, 0));
+  }
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,80px);
+    grid-template-rows: minmax(80px,auto) repeat(5,80px);
+  }
+  
+  
+  .span-two{
+    grid-column: span 2;
+  }
+  
+  .output {
+    grid-column: 1/-1;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    padding: 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+  
+  }
+  
+  .previous-operand{
+    color: rgba(255, 255, 255, 0.75);
+  }
+  
+  
+  
+  .current-operand{
+    color: rgba(255, 255, 255, 1);
+  }
+  
+  .calculator-grid button{
+    cursor: pointer;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+  
+  
+  
+  .calculator-grid button:hover{
+    background-color: rgba(241, 241, 241, 0.9);
+  }
+
+
+  .calculator-grid button:focus{
+    background-color: rgba(255, 174, 0, 0.9);
+  }
+  
+
+
+  @media (max-width: 600px) {
+    .calculatorpage {
+        min-width: 400px;
+    }
+  }
+  
+  
+  
+  
+  
+  

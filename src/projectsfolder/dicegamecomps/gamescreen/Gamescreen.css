@@ -1,0 +1,166 @@
+
+
+
+
+
+.gamescreen {
+    height: calc(100vh - var(--NAVBARHEIGHT));
+    width: calc(100vw - (100vw - 100%));
+    max-width: calc(100vw - (100vw - 100%));
+    
+   overflow-y: auto;
+    padding: 20px;
+    background-color: rgb(248, 248, 248);
+}
+
+
+.headgamecreen{
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    margin: 0 auto;
+    
+    padding: 10px;
+    
+    
+}
+.scorehead {
+    max-width: 200px;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.scorehead h1 {
+    font-size: 100px;
+    max-width: 200;
+    line-height: 100px;
+    
+    margin: auto;
+}
+.scorehead p {
+    font-size: 24px;
+    margin: auto;
+}
+.numbers{
+    display: flex;
+    gap: 10px;
+}
+.numberheads{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+.numberheads p {
+    margin: 0;
+    padding: 10px 0px 0px 0px;
+}
+
+.numberkey{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    display: grid;
+    place-items: center;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+
+.numberkey:hover{
+    background: rgb(240, 245, 245);
+}
+
+.boxselected {
+    background: green;
+}
+.boxselected:hover{
+    background: green;
+}
+
+
+.diceallcontainer{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+}
+.diceallcontainer p {
+    margin: 0;
+}
+.diceimgcontainer{
+    height: 150px;
+    width: 150px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.diceimg{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+
+.rulescontainer {
+    background: rgb(212, 212, 212);
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 3px;
+
+}
+.rulescontainer h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.rulescontainer p {
+    margin: 0;
+    line-height: 20px;
+}
+
+.rulescontainer ul {
+    list-style-position: inside;
+    list-style-type: decimal;
+    text-align: left;
+    margin-left: 0;
+    padding: 0;
+
+ }
+
+
+.error {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) { 
+    .headgamecreen {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+
+
+
+
+
