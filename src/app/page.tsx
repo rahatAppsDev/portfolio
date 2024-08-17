@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Home | Rahat",
   description: "Welcome to my portfolio.",
   icons: {
-    icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic1.jpeg"
+    icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
   }
 
 };
@@ -42,7 +42,7 @@ export default function Home() {
 
         </div>
       <Image
-      src="/assets/images/pic.jpeg"
+      src="https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
       alt="Profile Picture"
       width={500}
       height={500}
