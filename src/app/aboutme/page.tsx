@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: "About Me | Rahat",
     description: "My professional and academic details and also technological skills which I have",
     icons: {
-        icon: "/assets/images/pic.jpeg"
+        icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
       }
   };
 export default function Aboutme() {

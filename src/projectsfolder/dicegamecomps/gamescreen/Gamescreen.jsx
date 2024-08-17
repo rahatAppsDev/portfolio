@@ -64,7 +64,7 @@ const Gamescreen = () => {
 
     <div className="diceallcontainer">
         <div onClick={() => {rolldicefunc(1,7)}} className="diceimgcontainer">
-            <Image quality={100} width={500} height={500} className='diceimg' src={`/assets/images/dices/dice${selecteddice}.png`} alt="dice image" />
+            <Image quality={100} width={500} height={500} className='diceimg' src={`https://rahatappsdev.github.io/portfolio/assets/images/dices/dice${selecteddice}.png`} alt="dice image" />
         </div>
         <p>Click on the dice to roll</p>
         < Button onClick={() => {

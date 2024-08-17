@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     title: "Dice Game | Rahat",
     description: "Dice game practice project",
     icons: {
-        icon: "/assets/images/pic.jpeg"
+        icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
       }
   };
 export default function Dice() {

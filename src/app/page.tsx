@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Home | Rahat",
   description: "Welcome to my portfolio.",
   icons: {
-    icon: "/assets/images/pic.jpeg"
+    icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
   }
 
 };
@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className="introbtn_div">
             <Link className="projbtn" href={"/myprojects"}>Projects</Link>
-            <a className="cvbtn" href="/assets/files/Rahat_cv.pdf" download="Istiak_Ahamed_Fullstack.pdf">
+            <a className="cvbtn" href="https://rahatappsdev.github.io/portfolio/assets/files/Rahat_cv.pdf" download="Istiak_Ahamed_Fullstack.pdf">
       Download CV
     </a>
           </div>
