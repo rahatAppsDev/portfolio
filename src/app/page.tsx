@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Home | Rahat",
   description: "Welcome to my portfolio.",
   icons: {
-    icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
+    icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic1.jpeg"
   }
 
 };
