@@ -20,7 +20,7 @@ let count = 0;
 const Todo = () => {
 
   let inputref = useRef();  
-  const [currentinput,setCurrentInput] = useState()
+  const [currentinput,setCurrentInput] = useState("")
 
   const [todos,setTodos] = useState([]);
   useEffect(() => {
@@ -69,12 +69,11 @@ const Todo = () => {
             </div>
             <button className='todo-add-btn' onClick={() => {add()}}>Add</button>
         </div>
-        {todos !== null && (todos.length !== 0 &&<div className="todolist">
+        <div className="todolist">
         { todos.map((item,index) => {
            return <Todoitems key={index} no={index} task={item.task} display={item.display} setTodos={setTodos} />
         })}
-        </div>)}
-
+        </div>
 
 
     </div>
