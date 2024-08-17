@@ -22,7 +22,7 @@ export default function Myprojects() {
     {
       id: 1,
       icon: <RiTodoLine color={"black"} size={"25px"} />,
-      heading: "Todo page",
+      heading: "Todo",
       details: "This project is a todo page with localstorage where you can add or delete todo items and also checkmark which are completed.",
       link: "/myprojects/todo",
     },
@@ -37,7 +37,7 @@ export default function Myprojects() {
         id: 3,
         icon: <GiInvertedDice5 color={"black"} size={"25px"} />,
         heading: "Dice Game",
-        details: "A dice rolling game where you play by choosing any number between 1 to 6 then roll the dice. Score is added or deducted basing on your number",
+        details: "A dice rolling game where you play by choosing any number between 1 to 6 then roll the dice. Score is added or deducted basing on chosen number.",
         link: "/myprojects/dice",
       },
       

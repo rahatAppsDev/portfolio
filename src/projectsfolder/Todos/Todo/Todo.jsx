@@ -37,10 +37,9 @@ const Todo = () => {
     () => {
         setTimeout(() => {
           console.log("ok")
-            if (todos.length !== 0) {
               localStorage.setItem("todos",JSON.stringify(todos))
             
-            }
+            
         }, 100);
     },[todos]
   );
