@@ -1,0 +1,9 @@
+.loaderpage{
+    height: calc(100vh - var(--NAVBARHEIGHT));
+    width: calc(100vw - (100vw - 100%));
+    max-width: calc(100vw - (100vw - 100%));
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
