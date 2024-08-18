@@ -58,6 +58,7 @@ const Todo = () => {
   }  
   return (
     <>
+    <script>0</script>
    
     <div className={styles.todopage}>
       <div className={styles.todo}>
