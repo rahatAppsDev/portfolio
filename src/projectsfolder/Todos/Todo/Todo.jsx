@@ -1,7 +1,7 @@
 'use client'
 
 import Todoitems from "../Todoitems/Todoitems"
-import './Todo.css'
+import styles from "./Todo.module.css"
 import { useRef } from "react"
 import { useState } from "react";
 import { useEffect } from "react";
@@ -11,7 +11,7 @@ import { FcCancel } from "react-icons/fc";
 import { FiCalendar } from "react-icons/fi";
 import { GiCancel } from "react-icons/gi";
 
-
+import Head from "next/head"
 
 
 
@@ -57,26 +57,28 @@ const Todo = () => {
     
   }  
   return (
-    <div className="todopage">
-      <div className='todo'>
-        <div className="todo-header">
+    <>
+   
+    <div className={styles.todopage}>
+      <div className={styles.todo}>
+        <div className={styles.todo_header}>
             <h2>Todo List</h2>
         </div>
-        <div className="todo-add">
-            <div className="inputsection">
+        <div className={styles.todo_add}>
+            <div className={styles.inputsection}>
               
-            <input ref={inputref} type="text" placeholder='Add Todo' className='todo-input' onChange={(event)=> {
+            <input ref={inputref} type="text" placeholder='Add Todo' className={styles.todo_input} onChange={(event)=> {
               setCurrentInput(event.target.value.trim())
 
             }}/>
-            {currentinput !== "" && <GiCancel size={20} className="inputcancelbtn" onClick={()=> {
+            {currentinput !== "" && <GiCancel size={20} className={styles.inputcancelbtn} onClick={()=> {
               inputref.current.value="";
               setCurrentInput("")
             }}/>}
             </div>
-            <button className='todo-add-btn' onClick={() => {add()}}>Add</button>
+            <button className={styles.todo_add_btn} onClick={() => {add()}}>Add</button>
         </div>
-        {todos.length !== 0 &&<div className="todolist">
+        {todos.length !== 0 &&<div className={styles.todolist}>
          {todos.map((item,index) => {
            return <Todoitems key={index} no={index} task={item.task} display={item.display} setTodos={setTodos} />
         })}
@@ -85,6 +87,7 @@ const Todo = () => {
 
     </div>
     </div>
+    </>
   )
 }
 
