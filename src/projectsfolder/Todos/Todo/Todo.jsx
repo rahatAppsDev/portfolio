@@ -1,7 +1,6 @@
 'use client'
 
 import Todoitems from "../Todoitems/Todoitems"
-import styles from "./Todo.module.css"
 import { useRef } from "react"
 import { useState } from "react";
 import { useEffect } from "react";
@@ -58,28 +57,27 @@ const Todo = () => {
   }  
   return (
     <>
-    <script>0</script>
    
-    <div className={styles.todopage}>
-      <div className={styles.todo}>
-        <div className={styles.todo_header}>
+    <div className={"todopage"}>
+      <div className={"todo"}>
+        <div className={"todo_header"}>
             <h2>Todo List</h2>
         </div>
-        <div className={styles.todo_add}>
-            <div className={styles.inputsection}>
+        <div className={"todo_add"}>
+            <div className={"inputsection"}>
               
-            <input ref={inputref} type="text" placeholder='Add Todo' className={styles.todo_input} onChange={(event)=> {
+            <input ref={inputref} type="text" placeholder='Add Todo' className={"todo_input"} onChange={(event)=> {
               setCurrentInput(event.target.value.trim())
 
             }}/>
-            {currentinput !== "" && <GiCancel size={20} className={styles.inputcancelbtn} onClick={()=> {
+            {currentinput !== "" && <GiCancel size={20} className={"inputcancelbtn"} onClick={()=> {
               inputref.current.value="";
               setCurrentInput("")
             }}/>}
             </div>
-            <button className={styles.todo_add_btn} onClick={() => {add()}}>Add</button>
+            <button className={"todo_add_btn"} onClick={() => {add()}}>Add</button>
         </div>
-        {todos.length !== 0 &&<div className={styles.todolist}>
+        {todos.length !== 0 &&<div className={"todolist"}>
          {todos.map((item,index) => {
            return <Todoitems key={index} no={index} task={item.task} display={item.display} setTodos={setTodos} />
         })}

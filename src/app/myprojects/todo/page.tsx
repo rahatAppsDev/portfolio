@@ -1,5 +1,8 @@
 
 import Todo from "@/projectsfolder/Todos/Todo/Todo"
+
+import "@/projectsfolder/Todos/Todo/Todo.css";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
