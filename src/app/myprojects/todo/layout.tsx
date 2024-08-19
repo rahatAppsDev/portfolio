@@ -1,5 +1,4 @@
 
-import "@/projectsfolder/dicegamecomps/Dicegamepage/Dicegamepage.css";
 
 import "@/projectsfolder/Todos/Todo/Todo.css";
 
