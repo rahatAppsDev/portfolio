@@ -1,6 +1,6 @@
 
 
-import Dicegamepage from "@/projectsfolder/dicegamecomps/Dicegamepage/Dicegamepage"
+import Gamescreen from "@/projectsfolder/dicegamecomps/gamescreen/Gamescreen";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -12,6 +12,6 @@ export const metadata: Metadata = {
   };
 export default function Dice() {
     return (
-        <><Dicegamepage /></>
+        <><Gamescreen /></>
     )
 }
