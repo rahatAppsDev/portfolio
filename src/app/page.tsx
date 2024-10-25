@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className="introbtn_div">
             <Link className="projbtn" href={"/myprojects"}>Projects</Link>
-            <a className="cvbtn" href="https://rahatappsdev.github.io/portfolio/assets/files/Rahat_fullstack_developer.pdf" download="Istiak_Ahamed_Fullstack.pdf">
+            <a className="cvbtn" href="https://rahatappsdev.github.io/portfolio/assets/files/Rahat_cv.pdf" download="Istiak_Ahamed_Fullstack.pdf">
       Download CV
     </a>
           </div>
