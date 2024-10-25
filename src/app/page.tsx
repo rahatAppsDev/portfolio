@@ -30,11 +30,11 @@ export default function Home() {
         <div className="homepageintrosummary">
           <p className="introtextone"> Hi, I&apos;m</p>
           <p className="introtexttwo"> Istiak Ahamed</p>
-          <p className="introtextthree"> a Full Stack web developer having experience of building web apps with <span>React.js</span>, <span>Next.js</span> and <span>Django REST</span> framework.</p>
+          <p className="introtextthree"> a Full Stack web developer having experience of building web apps with <span>Next.js</span>, <span>Nest.js</span>, <span>React.js</span>, <span>Django REST</span> framework and <span>AWS</span>.</p>
 
           <div className="introbtn_div">
             <Link className="projbtn" href={"/myprojects"}>Projects</Link>
-            <a className="cvbtn" href="https://rahatappsdev.github.io/portfolio/assets/files/Rahat_cv.pdf" download="Istiak_Ahamed_Fullstack.pdf">
+            <a className="cvbtn" href="https://rahatappsdev.github.io/portfolio/assets/files/Rahat_fullstack_developer.pdf" download="Istiak_Ahamed_Fullstack.pdf">
       Download CV
     </a>
           </div>

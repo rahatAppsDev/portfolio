@@ -3,6 +3,9 @@ import "./myprojects.css";
 import { BsCalculatorFill } from "react-icons/bs";
 import { GiInvertedDice5 } from "react-icons/gi";
 import { RiTodoLine } from "react-icons/ri";
+//import { FaAws } from "react-icons/fa6";
+import { CiGlobe } from "react-icons/ci";
+
 
 
 
@@ -20,6 +23,15 @@ export const metadata: Metadata = {
 export default function Myprojects() {
   const myprojects = [
     {
+      id: 4,
+      icon: <CiGlobe color={"black"} size={"28px"} />,
+      heading: "Full-stack live project",
+      details: "Web app of a renowned company named Earthmoving Group in Bangladesh, completely built and hosted by me. Click on this card to visit-",
+      
+      link: "/myprojects/dice",
+    },
+    {
+      
       id: 1,
       icon: <RiTodoLine color={"black"} size={"25px"} />,
       heading: "Todo",
@@ -41,6 +53,7 @@ export default function Myprojects() {
         link: "/myprojects/dice",
       },
       
+      
   ];
   return (
     <>
@@ -49,13 +62,20 @@ export default function Myprojects() {
         <div className="projectslist">
           {myprojects.map((item, index) => {
             return (
-              <Link key={item.id} href={`${item.link}`}>
+              (item.id !==4 ? <Link key={item.id} href={`${item.link}`}>
                 <Projectcard
+                id = {item.id}
                   icon={item.icon}
                   heading={item.heading}
                   details={item.details}
                 />
-              </Link>
+              </Link> :<a href="https://earthmovinggroup.com.bd/" target="_blank"  // Opens in a new tab
+        rel="noopener noreferrer" ><Projectcard
+        id = {item.id}
+          icon={item.icon}
+          heading={item.heading}
+          details={item.details}
+        /></a>)
             );
           })}
         </div>

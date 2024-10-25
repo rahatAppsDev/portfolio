@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Calculator practice project",
   icons: {
     icon: "https://rahatappsdev.github.io/portfolio/assets/images/pic.jpeg"
-  }
+  },
 };
 export default function Calculator() {
 
